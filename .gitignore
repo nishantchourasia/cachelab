@@ -1,0 +1,38 @@
+# ---- Secrets: never commit ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*_rsa
+credentials.json
+secrets/
+
+# ---- Logs & OS/editor noise ----
+logs/
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# ---- Raw gem5 output: large, regenerable via `export`, never published ----
+data/raw_export/
+m5out/
+checkpoints/
+*.cpt
+stats.txt.gz
